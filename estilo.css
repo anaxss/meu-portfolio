@@ -8,10 +8,10 @@
   --cor-fundo:#1b1b1b;
   --cor-texto:#ffffff;
   --menu-link:rgb(243, 243, 243);
-  --cor-borda:#ffffff;
+  --cor-borda:#fff3f3;
 }
 :root[data-theme='light'] {
-  --cor-fundo:#fff2f2;
+  --cor-fundo:#e7e7e7;
   --cor-texto:#000000;
   --menu-link:rgb(0, 0, 0);
   --cor-borda:#1b1b1b;
@@ -147,6 +147,20 @@ header {
         font-size: 1rem;
     }
 
+
+    .logo{
+        width: 3.20rem; /* comprimento */
+        height: 2.0rem; /* altura */
+    }
+
+
+    .header-toggle {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    
 
 
 /* Medidas Responsivas */
