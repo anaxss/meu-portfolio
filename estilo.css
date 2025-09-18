@@ -3,21 +3,32 @@
 
 /* Definir as cores tema Dark */
 /* raiz */
-:root
+:root,
 :root[data-theme='dark'] {
-  --cor-fundo:#1b1b1b;
+  --cor-fundo:#000000;
   --cor-texto:#ffffff;
   --menu-link:rgb(243, 243, 243);
   --cor-borda:#fff3f3;
 }
 :root[data-theme='light'] {
-  --cor-fundo:#e7e7e7;
+  --cor-fundo:#ffffff;
   --cor-texto:#000000;
   --menu-link:rgb(0, 0, 0);
   --cor-borda:#1b1b1b;
   
 }
 
+/* Reset CSS = Padronizar */
+/* Seletor Universal */
+*{
+ margin: 0;
+ padding: 0%;
+}
+
+/* Inverter cor LOGO = filtro */
+html[data-theme='light'] .logo {
+  filter: invert(1);
+}
 
 body { 
 background:var(--cor-fundo);  /* cor fundo */
@@ -55,7 +66,10 @@ header {
     align-items: center;
     width: 100%;
     background: var(--cor-fundo);
-    border-bottom: 5px var(--cor-borda);
+    border-bottom: 5px solid var(--cor-borda);
+    position: fixed; /* voltar */
+    z-index: 9999; /* camadas */
+
 }
 
 .menu-desktop {
@@ -84,6 +98,7 @@ header {
 .menu-text{
     color: var(--menu-link);
     font-size: 1.2rem;
+    text-transform: capitalize;
     
 
 }
