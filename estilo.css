@@ -21,8 +21,9 @@
 /* Reset CSS = Padronizar */
 /* Seletor Universal */
 *{
- margin: 0;
- padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Inverter cor LOGO = filtro */
@@ -69,6 +70,7 @@ header {
     border-bottom: 5px solid var(--cor-borda);
     position: fixed; /* voltar */
     z-index: 9999; /* camadas */
+    padding: .5rem 1rem;
 
 }
 
@@ -177,10 +179,20 @@ header {
     }
 
     #home{
-        padding: 3.5rem 1rem;
+        padding: 4.5rem 1rem;
+        display: flex;
+        flex-direction: column;
     }
     
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1.0rem;
+    }
 
+    h1{
+        font-size: 2.5rem;
+    }
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
@@ -197,4 +209,29 @@ header {
         min-width: 30%;
     }
 
+    header{
+        padding: 1rem 6rem;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    #home{
+        padding: 4rem 6rem 4rem 6rem;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}/* Fim min 768px */
+
+@media( min-widh: 1400px){
+    
+    h1{
+        font-size: 6.5rem;
+    }
 }
