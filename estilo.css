@@ -175,6 +175,10 @@ header {
         align-items: center;
         
     }
+
+    #home{
+        padding: 3.5rem 1rem;
+    }
     
 
 
