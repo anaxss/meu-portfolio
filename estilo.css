@@ -5,7 +5,7 @@
 /* raiz */
 :root,
 :root[data-theme='dark'] {
-    --cor-fundo: #000000;
+    --cor-fundo: #6e0303;
     --cor-texto: #ffffff;
     --menu-link: rgb(243, 243, 243);
     --cor-borda: #fff3f3;
@@ -181,9 +181,9 @@ header {
 
 
 .logo {
-    width: 3.20rem;
+    /* width: 3.20rem; */
     /* comprimento */
-    height: 2.0rem;
+    height: 5.0rem;
     /* altura */
 }
 
@@ -258,6 +258,45 @@ h1 {
     
 }
 
+.loja-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card-title{
+    color: ;  /* Cor do Texto */
+    font-size: ;  /* Tamanho texto */
+    font-weight: ; /* Largura das letras */
+    font-family: ; /* Estilo das fontes */
+}
+
+
+
+.img-card{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+    .frente{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frente-img{
+        width: 100%;
+    }
+
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
@@ -296,6 +335,31 @@ h1 {
     }
 
 }
+
+@media (min-width: 992px) {
+    .loja-card{
+        flex-direction: row;
+    }
+
+    .img-card {
+        width: 60%; /* Tamanhos Das Fotos */
+        
+    }
+
+    .reverse-card{
+        /* Espalhar */
+        flex-direction: row-reverse;
+    }
+
+
+}
+
+
+    .img-card2 {
+        width: 60%;
+        
+    }
+
 
 /* Fim min 768px */
 
