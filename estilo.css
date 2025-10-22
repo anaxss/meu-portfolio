@@ -9,13 +9,18 @@
     --cor-texto: #ffffff;
     --menu-link: rgb(243, 243, 243);
     --cor-borda: #fff3f3;
+
+    --fundo-gradiente: linear-gradient(#790f0f, #000000 );
+
 }
 
 :root[data-theme='light'] {
-    --cor-fundo: #ffffff;
-    --cor-texto: #000000;
+    --cor-fundo: #ee0e0e;
+    --cor-texto: #ffffff;
     --menu-link: rgb(0, 0, 0);
     --cor-borda: #1b1b1b;
+
+    --fundo-gradiente: linear-gradient(#ee0e0e, #000000);
 
 }
 
@@ -27,18 +32,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    
+}
+
 /* Inverter cor LOGO = filtro */
 html[data-theme='light'] .logo {
     filter: invert(1);
 }
 
-body {
-    background: var(--cor-fundo);
-    /* cor fundo */
-    color: var(--cor-texto);
-    /* cor TEXTOS */
-    font-family: 'Courier New', Courier, monospace;
-}
 
 a {
     color: var(--menu-link);
@@ -52,7 +55,7 @@ ul {
 
 
 body {
-    background: var(--cor-fundo);
+    background: var(--fundo-gradiente);
     /* cor fundo */
     color: var(--cor-texto);
     /* cor TEXTOS */
@@ -85,7 +88,7 @@ header {
 }
 
 .menu-desktop {
-    background: rgb(104, 104, 104);
+    background: var(--cor-fundo);
     display: none;
     /* esconde o menu desktop */
 }
@@ -130,6 +133,9 @@ header {
     color: var(--cor-texto);
     display: flex;
     font-size: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
 }
 
 .menu-mobile {
@@ -155,6 +161,19 @@ header {
 /* Ativar o meu menu mobile  */
 .menu-mobile.active {
     transform: translateX(0%);
+}
+
+.menu-mobile
+/* nav */
+.menu-list
+
+/* UL */
+    {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1rem 2rem;
 }
 
 .menu-mobile .menu-list {
@@ -210,6 +229,7 @@ header {
 
 h1 {
     font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .video iframe {
@@ -223,10 +243,9 @@ h1 {
     padding: 2.5rem 1rem;
 }
 
-.descricao-video{
+.descricao-video {
     display: flex;
     flex-direction: column;
-    background: #5f5d5d;
     padding: 6.25rem 1rem 2rem;
     align-items: center;
     justify-content: flex-start;
@@ -236,7 +255,7 @@ h1 {
 }
 
 .descricao-video h2 {
-    font-size: 1,1rem;
+    font-size: 1, 1rem;
     text-transform: uppercase;
     text-align: justify;
     margin-top: 2rem;
@@ -245,17 +264,18 @@ h1 {
     /*  Letter-spacing */
 }
 
-.lojas{
+.lojas {
+
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.lojas-container{
+.lojas-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    
+
 }
 
 .loja-card {
@@ -265,7 +285,7 @@ h1 {
 
 }
 
-.card-body{
+.card-body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -283,7 +303,7 @@ h1 {
     /* largura das letras */
     font-family: "Inter", sans-serif;
     /* Estilo das fontes */
-    
+
 }
 
 .card-descricao {
@@ -301,20 +321,20 @@ h1 {
 
 
 
-.img-card{
+.img-card {
     width: 100%;
     border-radius: 0.5rem;
 }
 
-    .frente{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.frente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .frente-img{
-        width: 100%;
-    }
+.frente-img {
+    width: 100%;
+}
 
 
 
@@ -325,9 +345,9 @@ h1 {
 /* Medidas Responsivas */
 
 
-@media (max-width: 768px){
-    #incio{
-        padding-top: 5rem;
+@media (max-width: 768px) {
+    #home {
+        padding-top: 7rem;
     }
 
 }
@@ -358,7 +378,7 @@ h1 {
     #home,
     .lojas,
     .sobre {
-        padding: 4rem 6rem 4rem 6rem;
+        padding: 8rem 6rem 4rem 6rem;
     }
 
     .main-content {
@@ -370,28 +390,27 @@ h1 {
 }
 
 @media (min-width: 992px) {
-    .loja-card{
+    .loja-card {
         flex-direction: row;
     }
 
     .img-card {
-        width: 60%; /* Tamanhos Das Fotos */
-        
+        width: 60%;
+        /* Tamanhos Das Fotos */
+
     }
 
-    .reverse-card{
+    .reverse-card {
         /* Espalhar */
         flex-direction: row-reverse;
     }
 
-
-}
-
-
     .img-card2 {
         width: 60%;
-        
+
     }
+
+}
 
 
 /* Fim min 768px */
@@ -404,8 +423,7 @@ h1 {
 
     .descricao-video,
     .lojas,
-    .sobre
-    {
-    padding: 10rem 15rem 4rem;
-}
+    .sobre {
+        padding: 10rem 15rem 4rem;
+    }
 }
