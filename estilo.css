@@ -10,6 +10,9 @@
     --menu-link: rgb(243, 243, 243);
     --cor-borda: #fff3f3;
 
+    --cor-hover-icone: #ef75f8;
+
+
     --fundo-gradiente: linear-gradient(#790f0f, #000000 );
 
 }
@@ -19,6 +22,10 @@
     --cor-texto: #ffffff;
     --menu-link: rgb(0, 0, 0);
     --cor-borda: #1b1b1b;
+
+     --cor-hover-icone: #e800e8;
+
+
 
     --fundo-gradiente: linear-gradient(#ee0e0e, #000000);
 
@@ -319,6 +326,41 @@ h1 {
     margin-right: 8px;
 }
 
+.card-item i:hover{
+    color: #db1828;
+    transition: .5s ease-in-out;
+    
+}
+
+
+.redes-sociais{
+    font-size: 1.4rem;
+}
+
+
+.redes-sociais .instagram:hover{
+    color: #a44ee6;
+    transition: .5s ease-in-out;
+}
+
+
+
+
+.redes-sociais .tiktok:hover{
+    color: #000000;
+    transition: .5s ease-in-out;
+}
+
+.redes-sociais .google:hover{
+    color: #16e72e;
+    transition: .5s ease-in-out;
+}
+
+.redes-sociais .youtube:hover{
+    color: #ff0015;
+    transition: .5s ease-in-out;
+}
+
 
 
 .img-card {
@@ -334,6 +376,7 @@ h1 {
 
 .frente-img {
     width: 100%;
+ 
 }
 
 
