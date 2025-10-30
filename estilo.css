@@ -52,6 +52,8 @@ body {
     /* cor TEXTOS */
     font-family: Georgia, 'Times New Roman', Times, serif;
 
+}
+
 a {
     color: var(--menu-link);
     text-decoration: none;
@@ -336,26 +338,55 @@ h3 {
 }
 
 .redes-sociais .instagram {
-    color: #f57b00;
+    color: #cf09f2;
     font-size: 1.4rem;
 }
 
-.redes-sociais .instagram:hover {
-    color: #7f12d9;
+.redes-sociais .instagram:hover{
+    color: #ef7b07;
 
+ }
 
+ .redes-sociais .facebook {
+    color: #2228e0;
+    font-size: 1.4rem;
+ }
 
+ .redes-sociais .facebook:hover{
+    color: aqua;
+ }
 
-
-
-
-
+ .redes-sociais .whatsapp {
+    color: chartreuse;
+    font-size: 1.4rem;
+ }
 
 .redes-sociais .whatsapp:hover {
     color: #72f881;
-    font-size: 2rem;
 }
 
+
+.col1 {
+    background: #e473be;
+}
+.col2 {
+    background: #90daee;
+   
+}
+.col3 {
+    background: #6a7ee1;
+}
+.col4 {
+    background: #d6689f;
+}
+
+.col5{
+    background: #d4797f;
+}
+
+.col6{
+    background: #d1d472;
+}
 
 
 
@@ -403,7 +434,7 @@ h3 {
     #home,
     .projetos,
     .sobre {
-        padding: 8rem 6rem 4rem 6rem;
+        padding: 6rem 6rem 4rem 6rem;
     }
 
     .main-content {
@@ -441,12 +472,13 @@ h3 {
 
 @media (min-width: 1400px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     h2 {
         font-size: 4.5rem;
     }
+
     h3 {
         font-size: 3.25rem;
     }
@@ -456,5 +488,4 @@ h3 {
     .sobre {
         padding: 10rem 15rem 4rem;
     }
-
 }
